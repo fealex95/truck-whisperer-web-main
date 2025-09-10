@@ -4,6 +4,7 @@ import Services from "@/components/Services";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import FloatingWhatsAppIcon from "@/components/FloatingWhatsAppIcon";
 
 const Index = () => {
   return (
@@ -17,6 +18,7 @@ const Index = () => {
         <Contact />
       </main>
       <Footer />
+      <FloatingWhatsAppIcon />
 
       {/* Additional Structured Data for Business */}
       <script

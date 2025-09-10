@@ -11,7 +11,7 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
-  const whatsappNumber = "5511940377688"; // Replace with actual number
+  const whatsappNumber = "5511940377688";
   const whatsappMessage = "Olá! Gostaria de solicitar um orçamento para meu caminhão.";
 
   return (
