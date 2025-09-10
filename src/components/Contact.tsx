@@ -84,7 +84,7 @@ const Contact = () => {
                     <h4 className="text-lg font-semibold text-card-foreground mb-2">
                       {method.title}
                     </h4>
-                    <p className="text-xl font-bold text-primary mb-2">
+                    <p className="text-lg font-bold text-primary mb-2 break-all">
                       {method.info}
                     </p>
                     <p className="text-muted-foreground mb-4">
