@@ -34,13 +34,13 @@ const Hero = () => {
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-background mb-6 leading-tight">
-            Manutenção e Reparo
+            Pronto Atendimento, Manutenção e Reparo
             <span className="block text-safety-orange">de Caminhões</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-background/90 mb-12 max-w-3xl mx-auto leading-relaxed">
             Especialistas em manutenção preventiva e corretiva de caminhões.
-            Equipe experiente, peças originais e atendimento de confiança há mais de 15 anos.
+            Equipe experiente, peças originais e pronto atendimento de confiança para São Paulo Capital.
           </p>
 
           {/* CTA Buttons */}
@@ -52,7 +52,7 @@ const Hero = () => {
               className="shadow-accent transform hover:scale-105 transition-bounce"
             >
               <Phone className="mr-2" size={20} />
-              Solicitar Orçamento via WhatsApp
+              Solicitar pronto atendimento
             </Button>
 
             <Button
@@ -80,7 +80,7 @@ const Hero = () => {
                 <Shield className="w-6 h-6 text-background" />
               </div>
               <h3 className="font-semibold text-lg mb-2">Garantia Total</h3>
-              <p className="text-sm">6 meses de garantia em todos os serviços</p>
+              <p className="text-sm">3 meses de garantia em todos os serviços</p>
             </div>
 
             <div className="flex flex-col items-center text-background/90">

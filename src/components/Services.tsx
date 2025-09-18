@@ -120,19 +120,19 @@ const Services = () => {
         {/* All Brands Service */}
         <div className="mt-16 text-center bg-gradient-hero rounded-2xl p-8 shadow-professional">
           <h3 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-4">
-            Atendemos Todas as Marcas
+            Resgate e Mecânica 24h para Caminhões
           </h3>
           <p className="text-primary-foreground/90 mb-6 text-lg">
-            Mercedes, Volvo, Scania, Iveco, Man, Ford, Volkswagen e todas as demais marcas
+            Mecânicos prontos para qualquer marca, em qualquer situação.
           </p>
           <Button
             variant="whatsapp"
             size="lg"
-            onClick={() => handleServiceWhatsApp("Olá! Gostaria de saber mais sobre os serviços para a minha marca de caminhão.")}
+            onClick={() => handleServiceWhatsApp("Olá! Preciso de pronto atendimento para meu caminhão!.")}
             className="shadow-accent transform hover:scale-105 transition-bounce"
           >
             <Phone className="mr-2" size={20} />
-            Falar sobre Minha Marca
+            Chamar Agora via WhatsApp
           </Button>
         </div>
       </div>
