@@ -60,10 +60,10 @@ const Index = () => {
                 "priceRange": "$$",
                 "address": {
                   "@type": "PostalAddress",
-                  "streetAddress": "Rua dos Caminhoneiros, 1234",
+                  "streetAddress": "R. Itaperuna, 174 - Jardim Fatima, Guarulhos",
                   "addressLocality": "São Paulo",
                   "addressRegion": "SP",
-                  "postalCode": "01234-567",
+                  "postalCode": "07177-050",
                   "addressCountry": "BR"
                 },
                 "geo": {

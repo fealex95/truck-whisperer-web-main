@@ -137,23 +137,26 @@ const Contact = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Address */}
               <Card className="border-border h-full">
-                <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 bg-gradient-hero rounded-full flex items-center justify-center mx-auto mb-4">
-                    <MapPin className="w-8 h-8 text-primary-foreground" />
-                  </div>
-                  <h4 className="text-lg font-semibold text-card-foreground mb-4">
-                    Localização
-                  </h4>
-                  <div className="text-muted-foreground mb-4 space-y-1">
-                    <p>Rua dos Caminhoneiros, 1234</p>
-                    <p>Distrito Industrial - São Paulo/SP</p>
-                    <p>CEP: 01234-567</p>
-                  </div>
-                  <p className="text-sm text-muted-foreground">
-                    Fácil acesso para caminhões de todos os tamanhos
-                  </p>
-                </CardContent>
+                <a href="https://maps.app.goo.gl/k5Eda97FwSVAs8kM9">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-16 h-16 bg-gradient-hero rounded-full flex items-center justify-center mx-auto mb-4">
+                      <MapPin className="w-8 h-8 text-primary-foreground" />
+                    </div>
+                    <h4 className="text-lg font-semibold text-card-foreground mb-4">
+                      Localização
+                    </h4>
+                    <div className="text-muted-foreground mb-4 space-y-1">
+                      <p>R. Itaperuna, 174 - Jardim Fatima, Guarulhos</p>
+                      <p>Distrito Industrial - São Paulo/SP</p>
+                      <p>CEP: 07177-050</p>
+                    </div>
+                    <p className="text-sm text-muted-foreground">
+                      Fácil acesso para caminhões de todos os tamanhos
+                    </p>
+                  </CardContent>
+                </a>
               </Card>
+
 
               {/* Business Hours */}
               <Card className="border-border h-full">
@@ -171,6 +174,46 @@ const Contact = () => {
                         <span className="font-semibold text-card-foreground">{schedule.hours}</span>
                       </div>
                     ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Google Maps */}
+            <div className="space-y-6">
+              <h3 className="text-2xl font-bold text-foreground text-center">
+                Nossa Localização
+              </h3>
+              <Card className="border-border overflow-hidden">
+                <CardContent className="p-0">
+                  <div className="relative w-full h-96">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.05753259628!2d-46.39907903919899!3d-23.42228879391394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce882ced95f403%3A0xd2ad7ef42a106750!2sR.%20Itaperuna%2C%20174%20-%20Jardim%20Fatima%2C%20Guarulhos%20-%20SP%2C%2007177-050!5e0!3m2!1spt-BR!2sbr!4v1758489727300!5m2!1spt-BR!2sbr"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Localização MecânicaTruck"
+                      className="rounded-lg"
+                    />
+                  </div>
+                  <div className="p-4 bg-card">
+                    <p className="text-sm text-muted-foreground text-center">
+                      R. Itaperuna, 174 - Jardim Fatima - Guarulhos, São Paulo/SP
+                    </p>
+                    <div className="flex justify-center mt-3">
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        onClick={() => window.open('https://maps.app.goo.gl/k5Eda97FwSVAs8kM9', '_blank')}
+                        className="text-sm"
+                      >
+                        <MapPin className="mr-2" size={16} />
+                        Abrir no Google Maps
+                      </Button>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -197,7 +240,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   );
 };
 

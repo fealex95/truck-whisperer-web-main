@@ -123,12 +123,14 @@ const Footer = () => {
             <div className="space-y-4">
               <div>
                 <div className="flex items-start space-x-3 mb-2">
-                  <MapPin className="w-5 h-5 text-safety-orange mt-0.5" />
-                  <div className="text-background/90 text-sm">
-                    <p>Rua dos Caminhoneiros, 1234</p>
-                    <p>Distrito Industrial</p>
-                    <p>São Paulo/SP - CEP: 01234-567</p>
-                  </div>
+                  <a href="https://maps.app.goo.gl/k5Eda97FwSVAs8kM9" target="_blank" rel="noopener noreferrer" className="flex space-x-3">
+                    <MapPin className="w-5 h-5 text-safety-orange mt-0.5" />
+                    <div className="text-background/90 text-sm">
+                      <p>R. Itaperuna, 174 - Jardim Fatima</p>
+                      <p>Guarulhos</p>
+                      <p>São Paulo/SP - CEP: 07177-050</p>
+                    </div>
+                  </a>
                 </div>
               </div>
 
@@ -168,7 +170,7 @@ const Footer = () => {
               © {currentYear} Nobrega Mecânica. Todos os direitos reservados.
             </div>
             <div className="text-background/80 text-sm text-center md:text-right">
-              Oficina especializada em caminhões • CNPJ: 12.345.678/0001-90
+              Oficina especializada em caminhões • CNPJ: 59.942.849/0001-27
             </div>
           </div>
         </div>
@@ -182,16 +184,17 @@ const Footer = () => {
             "@context": "https://schema.org",
             "@type": "AutoRepair",
             "name": "Nobrega Mecânica - Oficina Especializada em Caminhões",
-            "description": "Oficina mecânica especializada em manutenção e reparo de caminhões. Serviços de qualidade há mais de 15 anos.",
+            "description": "Oficina mecânica especializada em manutenção e reparo de caminhões. Pronto atendimento no local.",
             "url": typeof window !== 'undefined' ? window.location.origin : '',
             "telephone": "+5511940377688",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Rua dos Caminhoneiros, 1234",
+              "streetAddress": "R. Itaperuna, 174 - Jardim Fatima, Guarulhos",
               "addressLocality": "São Paulo",
               "addressRegion": "SP",
-              "postalCode": "01234-567",
-              "addressCountry": "BR"
+              "postalCode": "07177-050",
+              "addressCountry": "BR",
+              "googleMapsLink": "https://maps.app.goo.gl/k5Eda97FwSVAs8kM9"
             },
             "openingHours": [
               "Mo-Fr 07:00-18:00",
