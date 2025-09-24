@@ -34,9 +34,9 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      info: "atendimento@nobregamecanica.com.br",
+      info: "atendimento@mecanicanobrega.com.br",
       description: "Nos envie um email",
-      action: () => window.open("mailto:atendimento@nobregamecanica.com.br"),
+      action: () => window.open("mailto:atendimento@mecanicanobrega.com.br"),
       buttonText: "Enviar Email",
       variant: "outline" as const
     }
